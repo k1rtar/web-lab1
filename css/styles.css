@@ -1,0 +1,213 @@
+/* Стили для всего контента */
+* {
+  font-family: monospace;
+}
+
+
+header {
+  display: flex;
+  align-items: center;
+  background-image: linear-gradient(-110deg, blanchedalmond, rgb(234, 194, 129));
+  padding: 0px;
+  box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.25);
+  border-bottom-right-radius: 20px;
+  text-align: center;
+}
+
+#logo {
+  width: 200px;
+  margin-right: 30px;
+  box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.25);
+  background-color: rgb(234, 194, 129);
+  border-top-right-radius: px;
+  border-bottom-right-radius: 20px;
+  padding: 0px;
+  transform: scale(1.1);
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(110deg, blanchedalmond, rgb(234, 194, 129));
+}
+.main{
+  margin-left: auto;
+  margin-right: auto;
+  width:auto;
+  padding-top: 50px;
+}
+
+tr>td{
+  text-align: center;
+}
+.student {
+  font-size: 20px;
+}
+
+label{
+  font-size: x-large;
+}
+
+.area{
+  border-radius: 28px;
+  box-shadow: 4px 4px 14px rgba(0,0,0,0.25);
+  margin-bottom: 30px;
+}
+
+.area:hover {
+  transform: scale(1.1);
+}
+
+.btn{
+  margin-top: 80px;
+  margin: 0 auto;
+  background: #111;
+  padding: 15px 20px; 
+  color: #fff;
+  border: none;
+  /* font-family: inherit; */
+  cursor: pointer;
+  width:100%;
+  font-size: large;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.btn:hover{
+  opacity: 0.88;
+}
+
+
+.results-table {
+  margin: 0 auto;
+  /* margin-top: 20px; */
+  /* margin-left:100px; */
+  border-collapse: collapse;
+  border-radius: 20px;
+  box-shadow: #000;
+}
+.results-table td {
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: 1px solid #000;
+  text-align: center;
+  background-color: #efc09c;
+  font-size: x-large;
+  /* width: auto; */
+}
+
+.clear-btn{
+  background: #fff;
+  padding: 15px 20px; 
+  color: #111;
+  border: none;
+  /* font-family: inherit; */
+  cursor: pointer;
+  width:70%;
+  font-size: large;
+  margin-top: 20px;
+}
+.clear-btn:hover{
+  opacity: 0.88;
+}
+
+#y-input{
+  width: 75%;
+  padding: 5px 2px;
+  border-radius: 3px;
+  height: 95%;
+  
+}
+
+#y-input::placeholder{
+  font-family: monospace;
+  font-size: large;
+}
+
+
+.r-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #9b8015; /* Основной цвет кнопки */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s, transform 0.2s;
+  transform-style: preserve-3d;
+  margin-right: 10px;
+  
+}
+
+.r-label{
+  margin-bottom: 10px;
+}
+.r-button:hover {
+  background-color: #45a049; /* Измененный цвет при наведении */
+  transform: translateY(-5px); /* Эффект поднятия кнопки */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Тень при наведении */
+}
+
+/* Стили для поля Y */
+#y-input {
+  border: 2px solid #000000; /* Цвет рамки */
+  padding: 10px; /* Внутренний отступ */
+  font-size: 16px;
+  border-radius: 5px; /* Скругление углов */
+  transition: background-color 0.5s; /* Плавное изменение цвета рамки при фокусе */
+}
+
+/* Стили для поля Y при фокусе (наведении курсора) */
+#y-input:focus {
+  background-color: #007BFF;
+  color: white;/* Измененный цвет рамки при фокусе */
+}
+
+/* #selected-r{
+  font-size: x-large;
+  width:22px;
+  text-align: center;
+  border-radius: 10px;
+  background-color: #fbff00;
+} */
+#selected-r {
+  width: 50px;
+  padding: 10px;
+  font-size: 18px;
+  text-align: center;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#selected-r:hover {
+  background-color: #0056b3;
+}
+
+/* #error-message{
+  font-size: large;
+  font-family: monospace;
+  color: red;
+  height: 2.5em;
+  /* margin-bottom: 50px; */
+
+/* } */
+
+
+#error-message {
+  height: auto;
+  max-height: 200px;
+  overflow-y: auto;
+  font-size: large;
+  font-family: monospace;
+  color: red;
+}
+
